@@ -1,7 +1,7 @@
 {
   "name": "pixel-stitch",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Fill in numbered patterns to reveal colourful pixel art.",
   "author": "jd4rider",
   "type": "module",
