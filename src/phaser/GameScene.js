@@ -179,7 +179,6 @@ export default class GameScene extends Phaser.Scene {
       color: 0x3f3357,
     }).setDepth(31)
     button(this, 480, y, 'All patterns', () => this.leave(), { w: 132, h: 44, size: 16, color: 0x3f3357 }).setDepth(31)
-    text(this, 552, y + 44, '', 12, '#7c6ba8')
   }
 
   // ---------- interaction ----------

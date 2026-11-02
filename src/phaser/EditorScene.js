@@ -57,12 +57,8 @@ export default class EditorScene extends Phaser.Scene {
 
     this.buildGrid()
 
-    button(this, W / 2 - 78, 0, 'Test play', () => this.play(), { w: 148, h: 44, size: 16, color: 0xdb2777 })
-    button(this, W / 2 + 78, 0, 'Share', () => this.share(), { w: 148, h: 44, size: 16, color: 0x6366f1 })
-    this.testButton = this.children.list.at(-2)
-    this.shareButton = this.children.list.at(-1)
-    this.testButton.setY(690)
-    this.shareButton.setY(690)
+    button(this, W / 2 - 78, 690, 'Test play', () => this.play(), { w: 148, h: 44, size: 16, color: 0xdb2777 })
+    button(this, W / 2 + 78, 690, 'Share', () => this.share(), { w: 148, h: 44, size: 16, color: 0x6366f1 })
     button(this, W / 2 - 78, 738, 'Import code', () => this.importCode(), { w: 148, h: 40, size: 15, color: 0x3f3357 })
     button(this, W / 2 + 78, 738, 'Clear', () => this.clear(), { w: 148, h: 40, size: 15, color: 0x3f3357 })
 
