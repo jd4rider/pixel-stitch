@@ -1,4 +1,5 @@
 import Phaser from 'phaser'
+import { openTipJar } from './support.js'
 import { W, H, background, button, text, fade } from './common.js'
 import { confetti, flashAt, popText, ring, sparkle } from './fx.js'
 import { audioState, sfx } from '../sound.js'
@@ -424,6 +425,14 @@ export default class GameScene extends Phaser.Scene {
       h: 44,
       size: 16,
       color: 0x3f3357,
+    }).setDepth(80)
+    // Quiet support link: results panel only, under the actions.
+    button(this, W / 2, H / 2 + (next ? 382 : 326), '☕ Buy me a coffee', () => openTipJar(), {
+      w: 320,
+      h: 30,
+      size: 14,
+      color: 0x2b2140,
+      textColor: '#f9a8d4',
     }).setDepth(80)
   }
 }
